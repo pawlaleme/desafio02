@@ -3,31 +3,39 @@ body {
   
     font-family: "Open Sans", sans-serif;
   
-    background: linear-gradient(90deg, rgb(227, 255, 248, 0) 82.08%, rgb(227, 255, 248, 0.38) 100%);
+    background: linear-gradient(180deg, rgb(227, 255, 248, 0) 82.08%, rgb(227, 255, 248, 0.38) 100%);
   
     min-height: 100vh;
   }
   
   .page {
-    width: 600px;
+    width: 1000px;
     margin: 0 auto;
     padding-top: 65px;
   }
   
+  main {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+
+  }
+
   nav {
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
     align-items: center;
-  
-    margin-bottom: 15px;
+    margin-bottom: 55px;
   }
   
   ul {
     display: flex;
     list-style: none;
+    gap: 48px;
     margin: 0;
     padding: 0;
-  }
+
+}
   
   a {
     color: #1f1534;
@@ -43,8 +51,7 @@ body {
     opacity: 1;
   }
   
-  h1,
-  ul {
+  h1, ul {
     font-family: "Mulish", sans-serif;
   }
   
@@ -63,30 +70,33 @@ body {
     font-weight: bold;
   }
   
-  section p {
+  section p{
     font-size: 14px;
     line-height: 28px;
-    color: #7d7987;
-  
-    margin: 40px 0;
-  }
-  
-  button {
-    color: white;
+    color: #7D7987;
     font-family: "Open Sans", sans-serif;
+    margin: 40px 0;
+   }
   
-    background: #69B99D;
-    border: 0;
-    padding: 0 50px 30px;
-  
-    display: flex;
-    justify-content: space-around;
-    gap: 50px;
-  
+   button {
+    text-transform: uppercase;
+    font-family: "Open Sans", sans-serif;
+   
     border-radius: 4px;
-  
+    border: 0;
+    padding: 14px 32px 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+    color: white;
+    background-color: #69B99D;
+    gap: 10px;
     cursor: pointer;
-  }
+
+}
   
   button:hover {
       background: #4EA788;
@@ -95,9 +105,7 @@ body {
   footer {
     font-size: 14px;
     line-height: 28px;
-  
     text-align: center;
-  
     margin-top: 80px;
   }
   
@@ -106,6 +114,7 @@ body {
   }
   
   #balls {
+    position: fixed;
       bottom: 0;
       right: 0;
   }
